@@ -1,0 +1,125 @@
+@font-face {
+    font-family: montserrat;
+    src: url(../../fonts/montserrat/montserrat-light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: raleway;
+    src: url(../../fonts/raleway/raleway-regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway;
+    src: url(../../fonts/raleway/raleway-medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway;
+    src: url(../../fonts/raleway/raleway-semibold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway;
+    src: url(../../fonts/raleway/raleway-extrabold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+$headline-font: "raleway", "arial", sans-serif;
+$body-font: "montserrat", "arial", sans-serif;
+
+%headline-font-base {
+    font-family: $headline-font;
+    font-style: normal;
+}
+
+%body-font-base {
+    font-family: $body-font;
+    font-style: normal;
+}
+
+.main-header-top-logo-txt {
+    @extend %headline-font-base;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: right;;
+}
+
+.menu {
+    @extend %body-font-base;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.h-1 {
+    @extend %headline-font-base;
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.h-2 {
+    @extend %headline-font-base;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.h-3 {
+    @extend %headline-font-base;
+    font-size: 30px;
+    font-weight: 600;
+    color: $color-5;
+}
+
+.h-4 {
+    @extend %headline-font-base;
+    font-size: 30px;
+    font-weight: 500;
+    color: $color-5;
+}
+
+.h-5 {
+    @extend %headline-font-base;
+    font-size: 22px;
+    font-weight: 600;
+    color: $color-5;
+}
+
+.h-6 {
+    @extend %headline-font-base;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-1 {
+    @extend %body-font-base;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+    color: $color-8;
+}
+
+.text-2 {
+    @extend %body-font-base;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.71;
+    color: $color-8;
+}
+
+.btn-1 {
+    @extend %headline-font-base;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.btn-2 {
+    @extend %headline-font-base;
+    font-size: 14px;
+    font-weight: 300;
+}

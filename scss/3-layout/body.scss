@@ -1,0 +1,35 @@
+.container {
+    width: 1920px;
+}
+
+.video {
+    position: relative;
+    height: 705px;
+    overflow: hidden;
+        .video-content {
+        position: absolute;
+        padding: 210px 685px 0 685px;
+        z-index: 3;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        text-align: center;
+            span, p {
+                color: #fff;
+            }
+        }
+
+        .video-player {
+        position: absolute;
+        }
+
+        .video-content-bg {
+        position: absolute;
+        width: 1920px;
+        height: 705px;;
+        z-index: 2;
+        background-color: rgba(0,0,0,0.7);
+        }
+
+}
+

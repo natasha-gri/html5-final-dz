@@ -1,0 +1,56 @@
+.sentence {
+    @extend %content-width;
+    display: flex;
+    padding: 80px 31px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sentence-card {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    max-width: 270px;
+    svg {
+        fill: $icon;
+        margin: 0 0 21px 0;
+    }
+    span {
+        margin: 0 0 11px 0;
+        width: 100%;
+    }
+    p {
+       margin: 0 0 27px 0;
+    }
+    &:after {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+    }
+    &:hover {
+        svg {
+            fill: $icon-hover;
+        }
+        span {
+            color: $icon-hover;
+        }
+        &:after {
+            background-color: $icon-hover;
+        }
+    }
+    &:active {
+        svg {
+            fill: $icon-active;
+        }
+        span {
+            color: $icon-active;
+        }
+        &:after {
+            background-color: $icon-active;
+        }
+    }
+}
